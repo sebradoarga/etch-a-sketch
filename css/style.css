@@ -56,11 +56,20 @@
 }
 
 button {
-    height: 10%;
-    width: 15%;
+    height: 8%;
+    width: 10%;
     position: relative;
     left: 3%;
     top: 6%;
     border-radius: 15px;
     font-size: 18px;
+    background: #C4DFE6;
+    border: 2px solid #07575b;
+    color: #003B46;
+    cursor: pointer;
+}
+
+button:hover {
+    transform:scale(1.05);
+    border: 2px solid rgb(248, 238, 146);
 }
