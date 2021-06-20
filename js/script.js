@@ -24,3 +24,11 @@ const makeBoard = () => {
 }
 
 makeBoard();
+
+let squares = board.querySelectorAll(".square");
+console.log(squares);
+squares.forEach((square) => {
+    square.addEventListener("mouseover", (e) => {
+        square.setAttribute("id", "touched");
+    })
+})

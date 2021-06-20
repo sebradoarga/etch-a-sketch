@@ -47,3 +47,7 @@
     background: #C4DFE6;
     border: 1px solid #66a5ad;
 }
+
+#touched {
+    background: #66a5ad;
+}
