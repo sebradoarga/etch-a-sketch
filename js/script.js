@@ -1,4 +1,14 @@
-const board = document.querySelector("#board");
+const boardArea = document.querySelector("#board-area");
+
+const pageTitle = document.createElement("h1");
+pageTitle.textContent = "Etch-a-Sketch";
+pageTitle.setAttribute("id", "pageTitle");
+boardArea.appendChild(pageTitle);
+
+const board = document.createElement("div");
+board.setAttribute("id", "board");
+boardArea.appendChild(board);
+
 
 const makeBoard = () => {
     for(let i = 0; i < 16; i++) {

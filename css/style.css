@@ -10,16 +10,27 @@
     background: #003B46;
 }
 
-#board {
-    width: 45%;
-    height: 80%;
-    background: red;
+#pageTitle {
+    color: #C4DFE6;
+}
+
+#board-area {
+    display: flex;
+    height: 90%;
+    width: 80%;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+#board {
+    width: 45%;
+    height: 80%;
     border: 20px solid #07575b;
     border-radius: 5%;
 }
