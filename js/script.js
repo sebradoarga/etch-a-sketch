@@ -38,12 +38,12 @@ makeBoard();
 
 restartButton.addEventListener("click", (e) => {
     squareNumber = parseInt(prompt("How many squares should the next board have on each side? (100 max)"));
-    console.log(squareNumber);
     if(squareNumber > 100) {
         squareNumber = 100;
-    } else if(!(squareNumber > 0 && squareNumber < 100)) {
-        squareNumber = 16;
+        boardArea.removeChild(board);
+        makeBoard();
+    } else if(squareNumber > 0 && squareNumber <= 100) {
+        boardArea.removeChild(board);
+        makeBoard();
     }
-    boardArea.removeChild(board);
-    makeBoard();
 })
